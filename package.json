@@ -1,0 +1,22 @@
+{
+  "name": "mern-money-tracker",
+  "version": "1.0.0",
+  "description": "income & expenses tracker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarenAdkins84/MERN-money-tracker.git"
+  },
+  "author": "Karen Adkins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KarenAdkins84/MERN-money-tracker/issues"
+  },
+  "homepage": "https://github.com/KarenAdkins84/MERN-money-tracker#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
