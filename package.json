@@ -4,7 +4,8 @@
   "description": "income & expenses tracker",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,12 @@
   },
   "homepage": "https://github.com/KarenAdkins84/MERN-money-tracker#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
