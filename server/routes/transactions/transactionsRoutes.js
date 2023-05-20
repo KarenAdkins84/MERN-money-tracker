@@ -1,10 +1,11 @@
 const express = require('express');
 const { createTransCtrl, fetchAllTransCtrl, fetchSingleTransCtrl, deleteTransCtrl, updateTransCtrl } = require('../../controllers/transactions/transactionsController');
+const isLoggedIn = require('../../middlewares/isLoggedIn');
 
 const transactionsRoutes = express.Router();
 
 //POST/api/v1/transactions
-transactionsRoutes.post('/', createTransCtrl);
+transactionsRoutes.post('/', isLoggedIn, createTransCtrl);
 
 //GET/api/v1/transactions
 transactionsRoutes.get('/', fetchAllTransCtrl);

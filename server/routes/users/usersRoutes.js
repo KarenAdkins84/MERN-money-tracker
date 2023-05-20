@@ -13,11 +13,11 @@ usersRoutes.post('/login', loginUserCtrl);
 //GET/api/v1/users/profile
 usersRoutes.get('/profile', isLoggedIn, userProfileCtrl);
 
-//DELETE/api/v1/users/:id
-usersRoutes.delete('/:id', deleteUserCtrl);
+//DELETE/api/v1/users/
+usersRoutes.delete('/', isLoggedIn, deleteUserCtrl);
 
-//PUT/api/v1/users/:id
-usersRoutes.put('/:id', updateUserCtrl);
+//PUT/api/v1/users/
+usersRoutes.put('/', isLoggedIn, updateUserCtrl);
 
 
 

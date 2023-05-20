@@ -14,7 +14,7 @@ const accountSchema = new mongoose.Schema({
         "Investment",
         "Checking",
         "Credit Card",
-        "Builing",
+        "Building",
         "School",
         "Project",
         "Utilities",
